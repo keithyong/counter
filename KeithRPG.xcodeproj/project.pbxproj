@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63CF595C1A583C3000032CDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF595B1A583C3000032CDA /* AppDelegate.m */; };
+		63CF595E1A583C3000032CDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF595D1A583C3000032CDA /* main.m */; };
+		63CF59611A583C3000032CDA /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF59601A583C3000032CDA /* GameScene.m */; };
+		63CF59631A583C3000032CDA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63CF59621A583C3000032CDA /* GameScene.sks */; };
+		63CF59651A583C3000032CDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CF59641A583C3000032CDA /* Images.xcassets */; };
+		63CF59681A583C3000032CDA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CF59661A583C3000032CDA /* MainMenu.xib */; };
+		63CF59741A583C3000032CDA /* KeithRPGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF59731A583C3000032CDA /* KeithRPGTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63CF596E1A583C3000032CDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63CF594D1A583C2F00032CDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63CF59541A583C3000032CDA;
+			remoteInfo = KeithRPG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63CF59551A583C3000032CDA /* KeithRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeithRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63CF59591A583C3000032CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CF595A1A583C3000032CDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63CF595B1A583C3000032CDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63CF595D1A583C3000032CDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63CF595F1A583C3000032CDA /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		63CF59601A583C3000032CDA /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		63CF59621A583C3000032CDA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		63CF59641A583C3000032CDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63CF59671A583C3000032CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		63CF596D1A583C3000032CDA /* KeithRPGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeithRPGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63CF59721A583C3000032CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CF59731A583C3000032CDA /* KeithRPGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeithRPGTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63CF59521A583C3000032CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CF596A1A583C3000032CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63CF594C1A583C2F00032CDA = {
+			isa = PBXGroup;
+			children = (
+				63CF59571A583C3000032CDA /* KeithRPG */,
+				63CF59701A583C3000032CDA /* KeithRPGTests */,
+				63CF59561A583C3000032CDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63CF59561A583C3000032CDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63CF59551A583C3000032CDA /* KeithRPG.app */,
+				63CF596D1A583C3000032CDA /* KeithRPGTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63CF59571A583C3000032CDA /* KeithRPG */ = {
+			isa = PBXGroup;
+			children = (
+				63CF595A1A583C3000032CDA /* AppDelegate.h */,
+				63CF595B1A583C3000032CDA /* AppDelegate.m */,
+				63CF595F1A583C3000032CDA /* GameScene.h */,
+				63CF59601A583C3000032CDA /* GameScene.m */,
+				63CF59621A583C3000032CDA /* GameScene.sks */,
+				63CF59641A583C3000032CDA /* Images.xcassets */,
+				63CF59661A583C3000032CDA /* MainMenu.xib */,
+				63CF59581A583C3000032CDA /* Supporting Files */,
+			);
+			path = KeithRPG;
+			sourceTree = "<group>";
+		};
+		63CF59581A583C3000032CDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63CF59591A583C3000032CDA /* Info.plist */,
+				63CF595D1A583C3000032CDA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63CF59701A583C3000032CDA /* KeithRPGTests */ = {
+			isa = PBXGroup;
+			children = (
+				63CF59731A583C3000032CDA /* KeithRPGTests.m */,
+				63CF59711A583C3000032CDA /* Supporting Files */,
+			);
+			path = KeithRPGTests;
+			sourceTree = "<group>";
+		};
+		63CF59711A583C3000032CDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63CF59721A583C3000032CDA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63CF59541A583C3000032CDA /* KeithRPG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63CF59771A583C3000032CDA /* Build configuration list for PBXNativeTarget "KeithRPG" */;
+			buildPhases = (
+				63CF59511A583C3000032CDA /* Sources */,
+				63CF59521A583C3000032CDA /* Frameworks */,
+				63CF59531A583C3000032CDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeithRPG;
+			productName = KeithRPG;
+			productReference = 63CF59551A583C3000032CDA /* KeithRPG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63CF596C1A583C3000032CDA /* KeithRPGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63CF597A1A583C3000032CDA /* Build configuration list for PBXNativeTarget "KeithRPGTests" */;
+			buildPhases = (
+				63CF59691A583C3000032CDA /* Sources */,
+				63CF596A1A583C3000032CDA /* Frameworks */,
+				63CF596B1A583C3000032CDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63CF596F1A583C3000032CDA /* PBXTargetDependency */,
+			);
+			name = KeithRPGTests;
+			productName = KeithRPGTests;
+			productReference = 63CF596D1A583C3000032CDA /* KeithRPGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63CF594D1A583C2F00032CDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = keith;
+				TargetAttributes = {
+					63CF59541A583C3000032CDA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					63CF596C1A583C3000032CDA = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 63CF59541A583C3000032CDA;
+					};
+				};
+			};
+			buildConfigurationList = 63CF59501A583C2F00032CDA /* Build configuration list for PBXProject "KeithRPG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63CF594C1A583C2F00032CDA;
+			productRefGroup = 63CF59561A583C3000032CDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63CF59541A583C3000032CDA /* KeithRPG */,
+				63CF596C1A583C3000032CDA /* KeithRPGTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63CF59531A583C3000032CDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CF59631A583C3000032CDA /* GameScene.sks in Resources */,
+				63CF59651A583C3000032CDA /* Images.xcassets in Resources */,
+				63CF59681A583C3000032CDA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CF596B1A583C3000032CDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63CF59511A583C3000032CDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CF595E1A583C3000032CDA /* main.m in Sources */,
+				63CF59611A583C3000032CDA /* GameScene.m in Sources */,
+				63CF595C1A583C3000032CDA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CF59691A583C3000032CDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CF59741A583C3000032CDA /* KeithRPGTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63CF596F1A583C3000032CDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63CF59541A583C3000032CDA /* KeithRPG */;
+			targetProxy = 63CF596E1A583C3000032CDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63CF59661A583C3000032CDA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63CF59671A583C3000032CDA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63CF59751A583C3000032CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		63CF59761A583C3000032CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		63CF59781A583C3000032CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeithRPG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63CF59791A583C3000032CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeithRPG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		63CF597B1A583C3000032CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeithRPGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeithRPG.app/Contents/MacOS/KeithRPG";
+			};
+			name = Debug;
+		};
+		63CF597C1A583C3000032CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeithRPGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeithRPG.app/Contents/MacOS/KeithRPG";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63CF59501A583C2F00032CDA /* Build configuration list for PBXProject "KeithRPG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CF59751A583C3000032CDA /* Debug */,
+				63CF59761A583C3000032CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63CF59771A583C3000032CDA /* Build configuration list for PBXNativeTarget "KeithRPG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CF59781A583C3000032CDA /* Debug */,
+				63CF59791A583C3000032CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		63CF597A1A583C3000032CDA /* Build configuration list for PBXNativeTarget "KeithRPGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CF597B1A583C3000032CDA /* Debug */,
+				63CF597C1A583C3000032CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63CF594D1A583C2F00032CDA /* Project object */;
+}
