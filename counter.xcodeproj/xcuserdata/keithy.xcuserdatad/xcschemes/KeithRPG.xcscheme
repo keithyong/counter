@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63CF59541A583C3000032CDA"
-               BuildableName = "KeithRPG.app"
-               BlueprintName = "KeithRPG"
-               ReferencedContainer = "container:KeithRPG.xcodeproj">
+               BuildableName = "counter.app"
+               BlueprintName = "counter"
+               ReferencedContainer = "container:counter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63CF596C1A583C3000032CDA"
-               BuildableName = "KeithRPGTests.xctest"
-               BlueprintName = "KeithRPGTests"
-               ReferencedContainer = "container:KeithRPG.xcodeproj">
+               BuildableName = "counterTests.xctest"
+               BlueprintName = "counterTests"
+               ReferencedContainer = "container:counter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63CF596C1A583C3000032CDA"
-               BuildableName = "KeithRPGTests.xctest"
-               BlueprintName = "KeithRPGTests"
-               ReferencedContainer = "container:KeithRPG.xcodeproj">
+               BuildableName = "counterTests.xctest"
+               BlueprintName = "counterTests"
+               ReferencedContainer = "container:counter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63CF59541A583C3000032CDA"
-            BuildableName = "KeithRPG.app"
-            BlueprintName = "KeithRPG"
-            ReferencedContainer = "container:KeithRPG.xcodeproj">
+            BuildableName = "counter.app"
+            BlueprintName = "counter"
+            ReferencedContainer = "container:counter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63CF59541A583C3000032CDA"
-            BuildableName = "KeithRPG.app"
-            BlueprintName = "KeithRPG"
-            ReferencedContainer = "container:KeithRPG.xcodeproj">
+            BuildableName = "counter.app"
+            BlueprintName = "counter"
+            ReferencedContainer = "container:counter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63CF59541A583C3000032CDA"
-            BuildableName = "KeithRPG.app"
-            BlueprintName = "KeithRPG"
-            ReferencedContainer = "container:KeithRPG.xcodeproj">
+            BuildableName = "counter.app"
+            BlueprintName = "counter"
+            ReferencedContainer = "container:counter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

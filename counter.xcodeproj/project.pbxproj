@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630E23D51A588CE100D5D131 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 630E23D41A588CE100D5D131 /* Info.plist */; };
+		633D1F281A5884C80087B230 /* buttonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 633D1F261A5884C80087B230 /* buttonDown.png */; };
+		633D1F291A5884C80087B230 /* buttonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 633D1F271A5884C80087B230 /* buttonUp.png */; };
 		63CF595C1A583C3000032CDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF595B1A583C3000032CDA /* AppDelegate.m */; };
 		63CF595E1A583C3000032CDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF595D1A583C3000032CDA /* main.m */; };
 		63CF59611A583C3000032CDA /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF59601A583C3000032CDA /* GameScene.m */; };
 		63CF59631A583C3000032CDA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63CF59621A583C3000032CDA /* GameScene.sks */; };
 		63CF59651A583C3000032CDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CF59641A583C3000032CDA /* Images.xcassets */; };
 		63CF59681A583C3000032CDA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CF59661A583C3000032CDA /* MainMenu.xib */; };
-		63CF59741A583C3000032CDA /* KeithRPGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF59731A583C3000032CDA /* KeithRPGTests.m */; };
+		63CF59741A583C3000032CDA /* countertests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CF59731A583C3000032CDA /* countertests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		63CF59551A583C3000032CDA /* KeithRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeithRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630E23D41A588CE100D5D131 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633D1F261A5884C80087B230 /* buttonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonDown.png; sourceTree = "<group>"; };
+		633D1F271A5884C80087B230 /* buttonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonUp.png; sourceTree = "<group>"; };
+		63CF59551A583C3000032CDA /* counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CF59591A583C3000032CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63CF595A1A583C3000032CDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63CF595B1A583C3000032CDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,9 +43,8 @@
 		63CF59621A583C3000032CDA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		63CF59641A583C3000032CDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		63CF59671A583C3000032CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		63CF596D1A583C3000032CDA /* KeithRPGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeithRPGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63CF59721A583C3000032CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63CF59731A583C3000032CDA /* KeithRPGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeithRPGTests.m; sourceTree = "<group>"; };
+		63CF596D1A583C3000032CDA /* counterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = counterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63CF59731A583C3000032CDA /* countertests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = countertests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +68,10 @@
 		63CF594C1A583C2F00032CDA = {
 			isa = PBXGroup;
 			children = (
-				63CF59571A583C3000032CDA /* KeithRPG */,
-				63CF59701A583C3000032CDA /* KeithRPGTests */,
+				633D1F261A5884C80087B230 /* buttonDown.png */,
+				633D1F271A5884C80087B230 /* buttonUp.png */,
+				63CF59571A583C3000032CDA /* counter */,
+				63CF59701A583C3000032CDA /* counter */,
 				63CF59561A583C3000032CDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +79,13 @@
 		63CF59561A583C3000032CDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63CF59551A583C3000032CDA /* KeithRPG.app */,
-				63CF596D1A583C3000032CDA /* KeithRPGTests.xctest */,
+				63CF59551A583C3000032CDA /* counter.app */,
+				63CF596D1A583C3000032CDA /* counterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		63CF59571A583C3000032CDA /* KeithRPG */ = {
+		63CF59571A583C3000032CDA /* counter */ = {
 			isa = PBXGroup;
 			children = (
 				63CF595A1A583C3000032CDA /* AppDelegate.h */,
@@ -90,7 +97,7 @@
 				63CF59661A583C3000032CDA /* MainMenu.xib */,
 				63CF59581A583C3000032CDA /* Supporting Files */,
 			);
-			path = KeithRPG;
+			path = counter;
 			sourceTree = "<group>";
 		};
 		63CF59581A583C3000032CDA /* Supporting Files */ = {
@@ -102,19 +109,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		63CF59701A583C3000032CDA /* KeithRPGTests */ = {
+		63CF59701A583C3000032CDA /* counter */ = {
 			isa = PBXGroup;
 			children = (
-				63CF59731A583C3000032CDA /* KeithRPGTests.m */,
+				63CF59731A583C3000032CDA /* countertests.m */,
 				63CF59711A583C3000032CDA /* Supporting Files */,
 			);
-			path = KeithRPGTests;
+			name = counter;
+			path = counterTests;
 			sourceTree = "<group>";
 		};
 		63CF59711A583C3000032CDA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				63CF59721A583C3000032CDA /* Info.plist */,
+				630E23D41A588CE100D5D131 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63CF59541A583C3000032CDA /* KeithRPG */ = {
+		63CF59541A583C3000032CDA /* counter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63CF59771A583C3000032CDA /* Build configuration list for PBXNativeTarget "KeithRPG" */;
+			buildConfigurationList = 63CF59771A583C3000032CDA /* Build configuration list for PBXNativeTarget "counter" */;
 			buildPhases = (
 				63CF59511A583C3000032CDA /* Sources */,
 				63CF59521A583C3000032CDA /* Frameworks */,
@@ -134,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = KeithRPG;
+			name = counter;
 			productName = KeithRPG;
-			productReference = 63CF59551A583C3000032CDA /* KeithRPG.app */;
+			productReference = 63CF59551A583C3000032CDA /* counter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63CF596C1A583C3000032CDA /* KeithRPGTests */ = {
+		63CF596C1A583C3000032CDA /* counterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63CF597A1A583C3000032CDA /* Build configuration list for PBXNativeTarget "KeithRPGTests" */;
+			buildConfigurationList = 63CF597A1A583C3000032CDA /* Build configuration list for PBXNativeTarget "counterTests" */;
 			buildPhases = (
 				63CF59691A583C3000032CDA /* Sources */,
 				63CF596A1A583C3000032CDA /* Frameworks */,
@@ -152,9 +160,9 @@
 			dependencies = (
 				63CF596F1A583C3000032CDA /* PBXTargetDependency */,
 			);
-			name = KeithRPGTests;
+			name = counterTests;
 			productName = KeithRPGTests;
-			productReference = 63CF596D1A583C3000032CDA /* KeithRPGTests.xctest */;
+			productReference = 63CF596D1A583C3000032CDA /* counterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 63CF59501A583C2F00032CDA /* Build configuration list for PBXProject "KeithRPG" */;
+			buildConfigurationList = 63CF59501A583C2F00032CDA /* Build configuration list for PBXProject "counter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63CF59541A583C3000032CDA /* KeithRPG */,
-				63CF596C1A583C3000032CDA /* KeithRPGTests */,
+				63CF59541A583C3000032CDA /* counter */,
+				63CF596C1A583C3000032CDA /* counterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,8 +207,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633D1F291A5884C80087B230 /* buttonUp.png in Resources */,
 				63CF59631A583C3000032CDA /* GameScene.sks in Resources */,
+				630E23D51A588CE100D5D131 /* Info.plist in Resources */,
 				63CF59651A583C3000032CDA /* Images.xcassets in Resources */,
+				633D1F281A5884C80087B230 /* buttonDown.png in Resources */,
 				63CF59681A583C3000032CDA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63CF59741A583C3000032CDA /* KeithRPGTests.m in Sources */,
+				63CF59741A583C3000032CDA /* countertests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +249,7 @@
 /* Begin PBXTargetDependency section */
 		63CF596F1A583C3000032CDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63CF59541A583C3000032CDA /* KeithRPG */;
+			target = 63CF59541A583C3000032CDA /* counter */;
 			targetProxy = 63CF596E1A583C3000032CDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -336,9 +347,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = KeithRPG/Info.plist;
+				INFOPLIST_FILE = counter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = counter;
 			};
 			name = Debug;
 		};
@@ -347,9 +358,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = KeithRPG/Info.plist;
+				INFOPLIST_FILE = counter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = counter;
 			};
 			name = Release;
 		};
@@ -368,7 +379,7 @@
 				);
 				INFOPLIST_FILE = KeithRPGTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = counterTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeithRPG.app/Contents/MacOS/KeithRPG";
 			};
 			name = Debug;
@@ -384,7 +395,7 @@
 				);
 				INFOPLIST_FILE = KeithRPGTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = counterTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeithRPG.app/Contents/MacOS/KeithRPG";
 			};
 			name = Release;
@@ -392,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63CF59501A583C2F00032CDA /* Build configuration list for PBXProject "KeithRPG" */ = {
+		63CF59501A583C2F00032CDA /* Build configuration list for PBXProject "counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63CF59751A583C3000032CDA /* Debug */,
@@ -401,21 +412,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63CF59771A583C3000032CDA /* Build configuration list for PBXNativeTarget "KeithRPG" */ = {
+		63CF59771A583C3000032CDA /* Build configuration list for PBXNativeTarget "counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63CF59781A583C3000032CDA /* Debug */,
 				63CF59791A583C3000032CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		63CF597A1A583C3000032CDA /* Build configuration list for PBXNativeTarget "KeithRPGTests" */ = {
+		63CF597A1A583C3000032CDA /* Build configuration list for PBXNativeTarget "counterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63CF597B1A583C3000032CDA /* Debug */,
 				63CF597C1A583C3000032CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
