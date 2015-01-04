@@ -11,46 +11,51 @@
 #include <stdlib.h>
 
 @implementation GameScene
-SKSpriteNode *buttonUp;
+
+/* The increment button textures and sizes */
+SKSpriteNode *incrButton;
 CGSize buttonSize;
 
-SKTexture *buttonUpTexture;
-CGSize buttonUpSize;
+SKTexture *incrButtonUpTexture;
+CGSize incrButtonUpSize;
 
-SKTexture *buttonDownTexture;
-CGSize buttonDownSize;
+SKTexture *incrButtonDownTexture;
+CGSize incrButtonDownSize;
 
+/* Counter label node and variables */
 SKLabelNode *counter;
 CGPoint counterLocation;
 int count;
 NSString *countStr;
-            
+
+CGPoint mid;
+
 -(void)didMoveToView:(SKView *)view {
-    /* Setup your scene here */
-    count = 0;
-    countStr = [@(count) stringValue];
+    /* Middle of frame */
+    mid = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
     
     /* Initialize counter */
-    counter = [SKLabelNode labelNodeWithFontNamed:@"Menlo"];
+    count = 0;
+    countStr = [@(count) stringValue];
+    counter = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
     [counter setText:countStr];
     [counter setFontSize:70];
-    [counter setPosition:CGPointMake(CGRectGetMidX(self.frame),
-                                     CGRectGetMidY(self.frame) + 120)];
+    [counter setPosition:CGPointMake(mid.x, mid.y + 120)];
     
-    buttonUpSize = CGSizeMake(396, 182);
-    buttonDownSize = CGSizeMake(396, 174);
+    /* Initialize the increment button sets */
+    incrButtonUpSize = CGSizeMake(396, 182);
+    incrButtonDownSize = CGSizeMake(396, 174);
     
-    buttonUpTexture = [SKTexture textureWithImageNamed:@"buttonUp"];
-    buttonDownTexture = [SKTexture textureWithImageNamed:@"buttonDown"];
+    incrButtonUpTexture = [SKTexture textureWithImageNamed:@"incrButton"];
+    incrButtonDownTexture = [SKTexture textureWithImageNamed:@"buttonDown"];
     
-    buttonUp = [SKSpriteNode spriteNodeWithTexture:buttonUpTexture];
-    [buttonUp setSize:buttonUpSize];
-    buttonUp.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+    incrButton = [SKSpriteNode spriteNodeWithTexture:incrButtonUpTexture];
+    [incrButton setSize:incrButtonUpSize];
+    [incrButton setPosition:mid];
     
-    [self addChild:buttonUp];
+    /* Add button and counter label to view */
+    [self addChild:incrButton];
     [self addChild:counter];
-    
-    [self setName:@"Counter"];
 }
 
 -(void)updateCounter {
@@ -60,13 +65,12 @@ NSString *countStr;
 }
 
 -(void)mouseDown:(NSEvent *)theEvent {
-     /* Called when a mouse click occurs */
-    
     CGPoint location = [theEvent locationInNode:self];
     CGRect touchLocation = CGRectMake(location.x, location.y, 2, 2);
-    if (CGRectIntersectsRect(touchLocation, buttonUp.calculateAccumulatedFrame)) {
-        [buttonUp setTexture:buttonDownTexture];
-        [buttonUp setSize:buttonDownSize];
+    
+    if (CGRectIntersectsRect(touchLocation, incrButton.calculateAccumulatedFrame)) {
+        [incrButton setTexture:incrButtonDownTexture];
+        [incrButton setSize:incrButtonDownSize];
         [self updateCounter];
     }
 }
@@ -74,10 +78,10 @@ NSString *countStr;
 -(void)mouseUp:(NSEvent *)theEvent {
     CGPoint location = [theEvent locationInNode:self];
     CGRect touchLocation = CGRectMake(location.x, location.y, 2, 2);
-    if (CGRectIntersectsRect(touchLocation, buttonUp.calculateAccumulatedFrame)) {
-        [buttonUp setTexture:buttonUpTexture];
-        [buttonUp setSize:buttonUpSize];
-        
+    
+    if (CGRectIntersectsRect(touchLocation, incrButton.calculateAccumulatedFrame)) {
+        [incrButton setTexture:incrButtonUpTexture];
+        [incrButton setSize:incrButtonUpSize];
     }
 }
 
