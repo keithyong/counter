@@ -10,11 +10,20 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define incrButtonWidth     396
+#define incrButtonHeight    182
+
 @implementation GameScene
 
 /* The increment button textures and sizes */
 SKSpriteNode *incrButton;
-CGSize buttonSize;
+CGPoint incrButtonDefaultPosition;
+CGSize incrButtonSize;
+
+/* Since the drop shadow adds a small bit of Y volume 
+ * to the button texture, we need to offset the Y position
+ * by a bit so it doesn't look like shit when pressed. */
+int incrButtonPressedYOffset = 2;
 
 SKTexture *incrButtonUpTexture;
 CGSize incrButtonUpSize;
@@ -30,6 +39,24 @@ NSString *countStr;
 
 CGPoint mid;
 
+-(void)initButtons:(CGPoint) buttonPosition {
+    /* Initialize the increment button sets */
+    incrButtonSize = CGSizeMake(incrButtonWidth, incrButtonHeight);
+    incrButtonDefaultPosition = buttonPosition;
+
+    /* Initialize unpressed and press button sizes and textures */
+    incrButtonUpSize = incrButtonSize;
+    incrButtonDownSize = CGSizeMake(incrButtonSize.width, incrButtonSize.height - 8);
+    
+    incrButtonUpTexture = [SKTexture textureWithImageNamed:@"buttonUp"];
+    incrButtonDownTexture = [SKTexture textureWithImageNamed:@"buttonDown"];
+    
+    /* Set initial texture to be unpressed button */
+    incrButton = [SKSpriteNode spriteNodeWithTexture:incrButtonUpTexture];
+    [incrButton setSize:incrButtonSize];
+    [incrButton setPosition:buttonPosition];
+}
+
 -(void)didMoveToView:(SKView *)view {
     /* Middle of frame */
     mid = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
@@ -42,17 +69,8 @@ CGPoint mid;
     [counter setFontSize:70];
     [counter setPosition:CGPointMake(mid.x, mid.y + 120)];
     
-    /* Initialize the increment button sets */
-    incrButtonUpSize = CGSizeMake(396, 182);
-    incrButtonDownSize = CGSizeMake(396, 174);
-    
-    incrButtonUpTexture = [SKTexture textureWithImageNamed:@"incrButton"];
-    incrButtonDownTexture = [SKTexture textureWithImageNamed:@"buttonDown"];
-    
-    incrButton = [SKSpriteNode spriteNodeWithTexture:incrButtonUpTexture];
-    [incrButton setSize:incrButtonUpSize];
-    [incrButton setPosition:mid];
-    
+    [self initButtons:mid];
+
     /* Add button and counter label to view */
     [self addChild:incrButton];
     [self addChild:counter];
@@ -66,23 +84,22 @@ CGPoint mid;
 
 -(void)mouseDown:(NSEvent *)theEvent {
     CGPoint location = [theEvent locationInNode:self];
-    CGRect touchLocation = CGRectMake(location.x, location.y, 2, 2);
+    /* TODO: It feels hacky making a 2x2 rect of touch location. Change to a better more elegant method. */
+    CGRect touchLocation = CGRectMake(location.x, location.y, 1, 1);
     
     if (CGRectIntersectsRect(touchLocation, incrButton.calculateAccumulatedFrame)) {
         [incrButton setTexture:incrButtonDownTexture];
         [incrButton setSize:incrButtonDownSize];
+        [incrButton setPosition:CGPointMake(incrButtonDefaultPosition.x,
+                                            incrButtonDefaultPosition.y - incrButtonPressedYOffset)];
         [self updateCounter];
     }
 }
 
 -(void)mouseUp:(NSEvent *)theEvent {
-    CGPoint location = [theEvent locationInNode:self];
-    CGRect touchLocation = CGRectMake(location.x, location.y, 2, 2);
-    
-    if (CGRectIntersectsRect(touchLocation, incrButton.calculateAccumulatedFrame)) {
-        [incrButton setTexture:incrButtonUpTexture];
-        [incrButton setSize:incrButtonUpSize];
-    }
+    [incrButton setTexture:incrButtonUpTexture];
+    [incrButton setSize:incrButtonUpSize];
+    [incrButton setPosition:incrButtonDefaultPosition];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
